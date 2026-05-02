@@ -96,7 +96,7 @@
       <img class="logo" src="images/bukwa_logo.png" alt="Bukwa" />
       <h1 data-i18n="title">Terms of Service</h1>
       <p class="subtitle" data-i18n="subtitle">Bukwa — AI Stories for Language Learning</p>
-      <p class="updated" data-i18n="updated">Last updated: April 10, 2026</p>
+      <p class="updated" data-i18n="updated">Last updated: May 2, 2026</p>
       <select class="lang-select" id="langSelect"></select>
     </header>
 
@@ -120,7 +120,7 @@ const LANGS = {
     name: "English",
     title: "Terms of Service",
     subtitle: "Bukwa — AI Stories for Language Learning",
-    updated: "Last updated: April 10, 2026",
+    updated: "Last updated: May 2, 2026",
     intro: `These Terms of Service ("Terms") govern your use of the Bukwa mobile application ("App") provided by Oleksandr ("Developer," "we," "us," or "our"). By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, do not use the App.`,
     sections: [
       { h: "1. Description of the Service", body: `<p>Bukwa is a language learning application that allows users to create vocabularies, generate AI-powered stories with built-in glossaries, practice with flashcards, and translate words using artificial intelligence. The App supports over 30 languages.</p>` },
@@ -171,23 +171,37 @@ const LANGS = {
           <li>Use automated tools, bots, or scripts to access the App beyond normal usage</li>
           <li>Attempt to bypass usage limits or subscription requirements</li>
           <li>Resell, redistribute, or commercially exploit the App or its content</li>
-          <li>Use the App to generate content that is hateful, harmful, or offensive</li>
         </ul>
       ` },
-      { h: "9. Intellectual Property", body: `
+      { h: "9. Prohibited Content", body: `
+        <p>You agree not to use the App, including its AI-powered story and translation features, to generate, request, store, or share content that:</p>
+        <ul>
+          <li>Sexualizes minors in any way, or depicts child sexual abuse material (CSAM) — there is zero tolerance for this category;</li>
+          <li>Contains explicit sexual content, pornography, or graphic nudity;</li>
+          <li>Promotes, glorifies, or provides instructions for violence, self-harm, suicide, or terrorism;</li>
+          <li>Promotes hatred, harassment, or discrimination against any individual or group based on race, ethnicity, religion, gender, sexual orientation, disability, or other protected characteristic;</li>
+          <li>Provides instructions for illegal activities, including the manufacture of weapons, drugs, or other controlled substances;</li>
+          <li>Infringes the intellectual property, privacy, or publicity rights of any third party;</li>
+          <li>Is defamatory, deceptive, fraudulent, or intended to impersonate another person.</li>
+        </ul>
+        <p>The App applies automated content filtering (via OpenAI's Moderation API) to user-supplied vocabulary words before generating stories, and the underlying AI models are instructed to redirect sensitive vocabulary into neutral, educational contexts. However, no automated filter is perfect.</p>
+        <p><strong>Reporting:</strong> If you encounter content that you believe violates these Terms, please report it via the in-app Report option or by emailing <a href="mailto:bukwa.ai@icloud.com">bukwa.ai@icloud.com</a>. We aim to respond to reports within 24 hours.</p>
+        <p><strong>Enforcement:</strong> We reserve the right, but assume no obligation, to monitor, review, remove, or refuse to generate any content that violates these Terms. Users who repeatedly violate this Prohibited Content policy may have their account suspended or terminated without refund.</p>
+      ` },
+      { h: "10. Intellectual Property", body: `
         <h3>9.1 App Ownership</h3>
         <p>The App, including its design, code, features, and branding, is the intellectual property of the Developer and is protected by copyright and other intellectual property laws.</p>
         <h3>9.2 AI Content License</h3>
         <p>AI-generated stories and translations produced through your use of the App are provided for your personal, non-commercial use. You may save and share stories generated for your account, but you may not commercially distribute or publish them at scale.</p>
       ` },
-      { h: "10. Third-Party Services", body: `<p>The App relies on third-party services for AI content generation, authentication, and data storage. The availability and performance of these services are outside our control. We are not responsible for any interruptions, errors, or limitations caused by third-party services.</p>` },
-      { h: "11. Disclaimer of Warranties", body: `<p><strong>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE.</strong></p>` },
-      { h: "12. Limitation of Liability", body: `<p><strong>TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE DEVELOPER SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, OR GOODWILL, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF THE APP. OUR TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE APP IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.</strong></p>` },
-      { h: "13. Service Availability", body: `<p>We reserve the right to modify, suspend, or discontinue the App or any part of it at any time, with or without notice. In the event of service discontinuation, active subscribers will receive a prorated refund for the unused portion of their subscription.</p>` },
-      { h: "14. Changes to These Terms", body: `<p>We may update these Terms from time to time. We will notify you of material changes through the App or by other reasonable means. Your continued use of the App after changes are posted constitutes your acceptance of the revised Terms.</p>` },
-      { h: "15. End User License Agreement", body: `<p>Use of the App is also subject to Apple's Standard End User License Agreement (EULA), available at <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a>.</p>` }
+      { h: "11. Third-Party Services", body: `<p>The App relies on third-party services for AI content generation, authentication, and data storage. The availability and performance of these services are outside our control. We are not responsible for any interruptions, errors, or limitations caused by third-party services.</p>` },
+      { h: "12. Disclaimer of Warranties", body: `<p><strong>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE.</strong></p>` },
+      { h: "13. Limitation of Liability", body: `<p><strong>TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE DEVELOPER SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, OR GOODWILL, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF THE APP. OUR TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE APP IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.</strong></p>` },
+      { h: "14. Service Availability", body: `<p>We reserve the right to modify, suspend, or discontinue the App or any part of it at any time, with or without notice. In the event of service discontinuation, active subscribers will receive a prorated refund for the unused portion of their subscription.</p>` },
+      { h: "15. Changes to These Terms", body: `<p>We may update these Terms from time to time. We will notify you of material changes through the App or by other reasonable means. Your continued use of the App after changes are posted constitutes your acceptance of the revised Terms.</p>` },
+      { h: "16. End User License Agreement", body: `<p>Use of the App is also subject to Apple's Standard End User License Agreement (EULA), available at <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a>.</p>` }
     ],
-    contactTitle: "16. Contact Information",
+    contactTitle: "17. Contact Information",
     contactIntro: "If you have any questions about these Terms, please contact us at:",
     labelEmail: "Email:",
     labelWebsite: "Website:",
@@ -198,7 +212,7 @@ const LANGS = {
     name: "Українська",
     title: "Умови використання",
     subtitle: "Bukwa — AI-історії для вивчення мов",
-    updated: "Останнє оновлення: 10 квітня 2026 р.",
+    updated: "Останнє оновлення: 2 травня 2026 р.",
     intro: `Ці Умови використання («Умови») регулюють використання вами мобільного застосунку Bukwa («Застосунок»), який надає Олександр («Розробник», «ми», «нас» або «наш»). Завантажуючи, встановлюючи або використовуючи Застосунок, ви погоджуєтесь із цими Умовами. Якщо ви не погоджуєтесь із ними, не використовуйте Застосунок.`,
     sections: [
       { h: "1. Опис сервісу", body: `<p>Bukwa — це застосунок для вивчення мов, який дозволяє створювати словники, генерувати історії зі штучним інтелектом із вбудованими глосаріями, тренуватися з картками та перекладати слова за допомогою ШІ. Застосунок підтримує понад 30 мов.</p>` },
@@ -249,23 +263,37 @@ const LANGS = {
           <li>використовувати автоматизовані інструменти, ботів чи скрипти для доступу до Застосунку поза межами звичайного використання;</li>
           <li>намагатися обійти ліміти використання або вимоги підписки;</li>
           <li>перепродавати, розповсюджувати або комерційно експлуатувати Застосунок чи його контент;</li>
-          <li>використовувати Застосунок для створення контенту, що є ненависницьким, шкідливим або образливим.</li>
         </ul>
       ` },
-      { h: "9. Інтелектуальна власність", body: `
+      { h: "9. Заборонений контент", body: `
+        <p>Ви погоджуєтеся не використовувати Застосунок, включно з функціями ШІ-історій та перекладу, для створення, запиту, зберігання чи поширення контенту, який:</p>
+        <ul>
+          <li>сексуалізує неповнолітніх будь-яким чином або зображує матеріали сексуального насильства над дітьми (CSAM) — для цієї категорії діє нульова толерантність;</li>
+          <li>містить відверто сексуальний контент, порнографію або графічну оголеність;</li>
+          <li>пропагує, прославляє або надає інструкції щодо насильства, самопошкодження, самогубства чи тероризму;</li>
+          <li>пропагує ненависть, переслідування чи дискримінацію будь-якої особи чи групи на основі раси, етнічної приналежності, релігії, статі, сексуальної орієнтації, інвалідності або іншої захищеної ознаки;</li>
+          <li>надає інструкції щодо незаконної діяльності, включно з виготовленням зброї, наркотиків чи інших контрольованих речовин;</li>
+          <li>порушує права інтелектуальної власності, конфіденційності чи публічності будь-якої третьої сторони;</li>
+          <li>є наклепницьким, оманливим, шахрайським або призначений для видавання себе за іншу особу.</li>
+        </ul>
+        <p>Застосунок застосовує автоматичну фільтрацію контенту (через OpenAI Moderation API) до слів, наданих користувачем, перед генерацією історій, а базові моделі ШІ отримують інструкції перенаправляти чутливу лексику в нейтральний, освітній контекст. Однак жоден автоматизований фільтр не є ідеальним.</p>
+        <p><strong>Звітування:</strong> Якщо ви натрапили на контент, який, на вашу думку, порушує ці Умови, повідомте про нього через опцію Report у застосунку або написавши на <a href="mailto:bukwa.ai@icloud.com">bukwa.ai@icloud.com</a>. Ми прагнемо реагувати на скарги протягом 24 годин.</p>
+        <p><strong>Виконання:</strong> Ми залишаємо за собою право, але не зобов\'язані, моніторити, переглядати, видаляти або відмовлятися генерувати будь-який контент, що порушує ці Умови. Користувачі, які неодноразово порушують цю політику Забороненого контенту, можуть мати свій акаунт призупинено або видалено без повернення коштів.</p>
+      ` },
+      { h: "10. Інтелектуальна власність", body: `
         <h3>9.1 Права на Застосунок</h3>
         <p>Застосунок, включно з його дизайном, кодом, функціями та брендингом, є інтелектуальною власністю Розробника та захищений авторським правом та іншими законами про інтелектуальну власність.</p>
         <h3>9.2 Ліцензія на контент ШІ</h3>
         <p>Історії та переклади, згенеровані ШІ у результаті використання вами Застосунку, надаються для вашого особистого, некомерційного використання. Ви можете зберігати та ділитися історіями, створеними для вашого облікового запису, але не можете комерційно розповсюджувати або публікувати їх у великому масштабі.</p>
       ` },
-      { h: "10. Сторонні сервіси", body: `<p>Застосунок використовує сторонні сервіси для генерації контенту ШІ, автентифікації та зберігання даних. Доступність і продуктивність цих сервісів поза нашим контролем. Ми не несемо відповідальності за будь-які перерви, помилки чи обмеження, спричинені сторонніми сервісами.</p>` },
-      { h: "11. Відмова від гарантій", body: `<p><strong>Застосунок надається «як є» та «як доступний», без будь-яких гарантій, прямих або непрямих, включно з, але не обмежуючись, непрямими гарантіями товарної придатності, придатності для конкретної мети та непорушення прав. Ми не гарантуємо, що Застосунок працюватиме безперервно, без помилок або буде безпечним.</strong></p>` },
-      { h: "12. Обмеження відповідальності", body: `<p><strong>У максимально допустимій законом мірі Розробник не несе відповідальності за будь-які непрямі, випадкові, спеціальні, побічні або штрафні збитки, а також за втрату прибутку, даних або ділової репутації, що виникли у зв'язку з використанням вами Застосунку. Наша загальна відповідальність не перевищуватиме суми, сплаченої вами за Застосунок за дванадцять (12) місяців, що передували претензії.</strong></p>` },
-      { h: "13. Доступність сервісу", body: `<p>Ми залишаємо за собою право змінювати, призупиняти або припиняти роботу Застосунку чи будь-якої його частини в будь-який час, з повідомленням або без нього. У разі припинення роботи сервісу активні підписники отримають пропорційне повернення коштів за невикористану частину підписки.</p>` },
-      { h: "14. Зміни цих Умов", body: `<p>Ми можемо час від часу оновлювати ці Умови. Про суттєві зміни ми повідомимо через Застосунок або іншими розумними засобами. Продовження використання Застосунку після публікації змін означає прийняття вами оновлених Умов.</p>` },
-      { h: "15. Ліцензійна угода кінцевого користувача", body: `<p>Використання Застосунку також регулюється Стандартною ліцензійною угодою кінцевого користувача Apple (EULA), доступною за посиланням <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a>.</p>` }
+      { h: "11. Сторонні сервіси", body: `<p>Застосунок використовує сторонні сервіси для генерації контенту ШІ, автентифікації та зберігання даних. Доступність і продуктивність цих сервісів поза нашим контролем. Ми не несемо відповідальності за будь-які перерви, помилки чи обмеження, спричинені сторонніми сервісами.</p>` },
+      { h: "12. Відмова від гарантій", body: `<p><strong>Застосунок надається «як є» та «як доступний», без будь-яких гарантій, прямих або непрямих, включно з, але не обмежуючись, непрямими гарантіями товарної придатності, придатності для конкретної мети та непорушення прав. Ми не гарантуємо, що Застосунок працюватиме безперервно, без помилок або буде безпечним.</strong></p>` },
+      { h: "13. Обмеження відповідальності", body: `<p><strong>У максимально допустимій законом мірі Розробник не несе відповідальності за будь-які непрямі, випадкові, спеціальні, побічні або штрафні збитки, а також за втрату прибутку, даних або ділової репутації, що виникли у зв'язку з використанням вами Застосунку. Наша загальна відповідальність не перевищуватиме суми, сплаченої вами за Застосунок за дванадцять (12) місяців, що передували претензії.</strong></p>` },
+      { h: "14. Доступність сервісу", body: `<p>Ми залишаємо за собою право змінювати, призупиняти або припиняти роботу Застосунку чи будь-якої його частини в будь-який час, з повідомленням або без нього. У разі припинення роботи сервісу активні підписники отримають пропорційне повернення коштів за невикористану частину підписки.</p>` },
+      { h: "15. Зміни цих Умов", body: `<p>Ми можемо час від часу оновлювати ці Умови. Про суттєві зміни ми повідомимо через Застосунок або іншими розумними засобами. Продовження використання Застосунку після публікації змін означає прийняття вами оновлених Умов.</p>` },
+      { h: "16. Ліцензійна угода кінцевого користувача", body: `<p>Використання Застосунку також регулюється Стандартною ліцензійною угодою кінцевого користувача Apple (EULA), доступною за посиланням <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a>.</p>` }
     ],
-    contactTitle: "16. Контактна інформація",
+    contactTitle: "17. Контактна інформація",
     contactIntro: "Якщо у вас є запитання щодо цих Умов, зв'яжіться з нами:",
     labelEmail: "Електронна пошта:",
     labelWebsite: "Вебсайт:",
@@ -276,7 +304,7 @@ const LANGS = {
     name: "Čeština",
     title: "Podmínky použití",
     subtitle: "Bukwa — AI příběhy pro výuku jazyků",
-    updated: "Poslední aktualizace: 10. dubna 2026",
+    updated: "Poslední aktualizace: 2. května 2026",
     intro: `Tyto Podmínky použití („Podmínky") upravují vaše používání mobilní aplikace Bukwa („Aplikace") poskytované Oleksandrem („Vývojář", „my", „nás" nebo „naše"). Stažením, instalací nebo používáním Aplikace souhlasíte s tím, že budete vázáni těmito Podmínkami. Pokud s těmito Podmínkami nesouhlasíte, Aplikaci nepoužívejte.`,
     sections: [
       { h: "1. Popis služby", body: `<p>Bukwa je aplikace pro výuku jazyků, která umožňuje uživatelům vytvářet slovníky, generovat příběhy s podporou AI s vestavěnými glosáři, procvičovat pomocí kartiček a překládat slova s využitím umělé inteligence. Aplikace podporuje více než 30 jazyků.</p>` },
@@ -327,23 +355,37 @@ const LANGS = {
           <li>používat automatizované nástroje, boty nebo skripty k přístupu k Aplikaci nad rámec běžného použití;</li>
           <li>pokoušet se obejít limity použití nebo požadavky předplatného;</li>
           <li>dále prodávat, redistribuovat nebo komerčně využívat Aplikaci nebo její obsah;</li>
-          <li>používat Aplikaci k vytváření nenávistného, škodlivého nebo urážlivého obsahu.</li>
         </ul>
       ` },
-      { h: "9. Duševní vlastnictví", body: `
+      { h: "9. Zakázaný obsah", body: `
+        <p>Souhlasíte s tím, že nebudete používat Aplikaci, včetně jejích funkcí AI příběhů a překladu, k vytváření, vyžadování, ukládání nebo sdílení obsahu, který:</p>
+        <ul>
+          <li>jakýmkoli způsobem sexualizuje nezletilé nebo zobrazuje materiály se sexuálním zneužíváním dětí (CSAM) — pro tuto kategorii platí nulová tolerance;</li>
+          <li>obsahuje explicitní sexuální obsah, pornografii nebo grafickou nahotu;</li>
+          <li>propaguje, oslavuje nebo poskytuje pokyny k násilí, sebepoškozování, sebevraždě nebo terorismu;</li>
+          <li>propaguje nenávist, obtěžování nebo diskriminaci jednotlivce či skupiny na základě rasy, etnického původu, náboženství, pohlaví, sexuální orientace, postižení nebo jiné chráněné charakteristiky;</li>
+          <li>poskytuje pokyny k nezákonným aktivitám, včetně výroby zbraní, drog nebo jiných kontrolovaných látek;</li>
+          <li>porušuje práva duševního vlastnictví, soukromí nebo osobnosti jakékoli třetí strany;</li>
+          <li>je pomlouvačný, klamavý, podvodný nebo má za cíl vydávat se za jinou osobu.</li>
+        </ul>
+        <p>Aplikace aplikuje automatické filtrování obsahu (prostřednictvím OpenAI Moderation API) na slovní zásobu zadanou uživatelem před generováním příběhů a základní AI modely jsou instruovány přesměrovat citlivou slovní zásobu do neutrálních, vzdělávacích kontextů. Žádný automatizovaný filtr však není dokonalý.</p>
+        <p><strong>Hlášení:</strong> Pokud narazíte na obsah, který podle vás porušuje tyto Podmínky, nahlaste jej prostřednictvím možnosti Report v aplikaci nebo e-mailem na <a href="mailto:bukwa.ai@icloud.com">bukwa.ai@icloud.com</a>. Snažíme se reagovat na hlášení do 24 hodin.</p>
+        <p><strong>Vymáhání:</strong> Vyhrazujeme si právo, ale nemáme povinnost, sledovat, kontrolovat, odstraňovat nebo odmítnout generovat jakýkoli obsah, který porušuje tyto Podmínky. Uživatelům, kteří opakovaně porušují tuto Zásadu zakázaného obsahu, může být účet pozastaven nebo zrušen bez náhrady.</p>
+      ` },
+      { h: "10. Duševní vlastnictví", body: `
         <h3>9.1 Vlastnictví Aplikace</h3>
         <p>Aplikace, včetně jejího designu, kódu, funkcí a brandingu, je duševním vlastnictvím Vývojáře a je chráněna autorským právem a dalšími zákony o duševním vlastnictví.</p>
         <h3>9.2 Licence obsahu AI</h3>
         <p>AI generované příběhy a překlady vytvořené při vašem používání Aplikace jsou poskytovány pro vaše osobní, nekomerční použití. Můžete ukládat a sdílet příběhy vytvořené pro váš účet, ale nesmíte je komerčně distribuovat nebo publikovat ve velkém měřítku.</p>
       ` },
-      { h: "10. Služby třetích stran", body: `<p>Aplikace se spoléhá na služby třetích stran pro generování AI obsahu, autentizaci a ukládání dat. Dostupnost a výkon těchto služeb jsou mimo naši kontrolu. Nezodpovídáme za žádné přerušení, chyby ani omezení způsobená službami třetích stran.</p>` },
-      { h: "11. Vyloučení záruk", body: `<p><strong>Aplikace je poskytována „jak stojí a leží" a „jak je dostupná", bez záruk jakéhokoli druhu, výslovných nebo předpokládaných, včetně, ale nikoli výhradně, předpokládaných záruk obchodovatelnosti, vhodnosti pro konkrétní účel a neporušení práv. Nezaručujeme, že Aplikace bude nepřerušená, bezchybná nebo bezpečná.</strong></p>` },
-      { h: "12. Omezení odpovědnosti", body: `<p><strong>V maximálním rozsahu povoleném zákonem nebude Vývojář odpovídat za žádné nepřímé, náhodné, zvláštní, následné ani trestní škody, ani za ztrátu zisku, dat nebo dobrého jména vzniklé v souvislosti s vaším používáním Aplikace. Naše celková odpovědnost nepřekročí částku, kterou jste za Aplikaci zaplatili během dvanácti (12) měsíců předcházejících nároku.</strong></p>` },
-      { h: "13. Dostupnost služby", body: `<p>Vyhrazujeme si právo Aplikaci nebo její jakoukoli část kdykoli upravit, pozastavit nebo ukončit, s upozorněním nebo bez něj. V případě ukončení služby obdrží aktivní předplatitelé poměrnou náhradu za nevyužitou část svého předplatného.</p>` },
-      { h: "14. Změny těchto Podmínek", body: `<p>Tyto Podmínky můžeme čas od času aktualizovat. O významných změnách vás budeme informovat prostřednictvím Aplikace nebo jinými přiměřenými prostředky. Pokračování v používání Aplikace po zveřejnění změn představuje vaše přijetí revidovaných Podmínek.</p>` },
-      { h: "15. Licenční smlouva s koncovým uživatelem", body: `<p>Používání Aplikace také podléhá Standardní licenční smlouvě s koncovým uživatelem (EULA) společnosti Apple, dostupné na <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a>.</p>` }
+      { h: "11. Služby třetích stran", body: `<p>Aplikace se spoléhá na služby třetích stran pro generování AI obsahu, autentizaci a ukládání dat. Dostupnost a výkon těchto služeb jsou mimo naši kontrolu. Nezodpovídáme za žádné přerušení, chyby ani omezení způsobená službami třetích stran.</p>` },
+      { h: "12. Vyloučení záruk", body: `<p><strong>Aplikace je poskytována „jak stojí a leží" a „jak je dostupná", bez záruk jakéhokoli druhu, výslovných nebo předpokládaných, včetně, ale nikoli výhradně, předpokládaných záruk obchodovatelnosti, vhodnosti pro konkrétní účel a neporušení práv. Nezaručujeme, že Aplikace bude nepřerušená, bezchybná nebo bezpečná.</strong></p>` },
+      { h: "13. Omezení odpovědnosti", body: `<p><strong>V maximálním rozsahu povoleném zákonem nebude Vývojář odpovídat za žádné nepřímé, náhodné, zvláštní, následné ani trestní škody, ani za ztrátu zisku, dat nebo dobrého jména vzniklé v souvislosti s vaším používáním Aplikace. Naše celková odpovědnost nepřekročí částku, kterou jste za Aplikaci zaplatili během dvanácti (12) měsíců předcházejících nároku.</strong></p>` },
+      { h: "14. Dostupnost služby", body: `<p>Vyhrazujeme si právo Aplikaci nebo její jakoukoli část kdykoli upravit, pozastavit nebo ukončit, s upozorněním nebo bez něj. V případě ukončení služby obdrží aktivní předplatitelé poměrnou náhradu za nevyužitou část svého předplatného.</p>` },
+      { h: "15. Změny těchto Podmínek", body: `<p>Tyto Podmínky můžeme čas od času aktualizovat. O významných změnách vás budeme informovat prostřednictvím Aplikace nebo jinými přiměřenými prostředky. Pokračování v používání Aplikace po zveřejnění změn představuje vaše přijetí revidovaných Podmínek.</p>` },
+      { h: "16. Licenční smlouva s koncovým uživatelem", body: `<p>Používání Aplikace také podléhá Standardní licenční smlouvě s koncovým uživatelem (EULA) společnosti Apple, dostupné na <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a>.</p>` }
     ],
-    contactTitle: "16. Kontaktní informace",
+    contactTitle: "17. Kontaktní informace",
     contactIntro: "Pokud máte jakékoli dotazy ohledně těchto Podmínek, kontaktujte nás na:",
     labelEmail: "E-mail:",
     labelWebsite: "Web:",
@@ -354,7 +396,7 @@ const LANGS = {
     name: "Français",
     title: "Conditions d'utilisation",
     subtitle: "Bukwa — Histoires IA pour l'apprentissage des langues",
-    updated: "Dernière mise à jour : 10 avril 2026",
+    updated: "Dernière mise à jour : 2 mai 2026",
     intro: `Les présentes Conditions d'utilisation (« Conditions ») régissent votre utilisation de l'application mobile Bukwa (« Application ») fournie par Oleksandr (« Développeur », « nous », « notre » ou « nos »). En téléchargeant, installant ou utilisant l'Application, vous acceptez d'être lié par ces Conditions. Si vous n'acceptez pas ces Conditions, n'utilisez pas l'Application.`,
     sections: [
       { h: "1. Description du service", body: `<p>Bukwa est une application d'apprentissage des langues qui permet aux utilisateurs de créer des vocabulaires, de générer des histoires propulsées par l'IA avec des glossaires intégrés, de s'entraîner avec des cartes mémoire et de traduire des mots grâce à l'intelligence artificielle. L'Application prend en charge plus de 30 langues.</p>` },
@@ -405,23 +447,37 @@ const LANGS = {
           <li>utiliser des outils automatisés, bots ou scripts pour accéder à l'Application au-delà de l'usage normal ;</li>
           <li>tenter de contourner les limites d'utilisation ou les exigences d'abonnement ;</li>
           <li>revendre, redistribuer ou exploiter commercialement l'Application ou son contenu ;</li>
-          <li>utiliser l'Application pour générer du contenu haineux, nuisible ou offensant.</li>
         </ul>
       ` },
-      { h: "9. Propriété intellectuelle", body: `
+      { h: "9. Contenu interdit", body: `
+        <p>Vous vous engagez à ne pas utiliser l\'Application, y compris ses fonctions d\'histoires et de traduction par IA, pour générer, demander, stocker ou partager du contenu qui :</p>
+        <ul>
+          <li>sexualise des mineurs de quelque manière que ce soit ou représente des matériels d\'abus sexuel sur enfants (CSAM) — tolérance zéro pour cette catégorie ;</li>
+          <li>contient du contenu sexuel explicite, de la pornographie ou de la nudité graphique ;</li>
+          <li>promeut, glorifie ou fournit des instructions pour la violence, l\'automutilation, le suicide ou le terrorisme ;</li>
+          <li>promeut la haine, le harcèlement ou la discrimination contre tout individu ou groupe sur la base de la race, l\'ethnie, la religion, le genre, l\'orientation sexuelle, le handicap ou autre caractéristique protégée ;</li>
+          <li>fournit des instructions pour des activités illégales, y compris la fabrication d\'armes, de drogues ou autres substances contrôlées ;</li>
+          <li>enfreint les droits de propriété intellectuelle, de confidentialité ou de publicité de tiers ;</li>
+          <li>est diffamatoire, trompeur, frauduleux ou destiné à usurper l\'identité d\'autrui.</li>
+        </ul>
+        <p>L\'Application applique un filtrage automatique du contenu (via l\'API Moderation d\'OpenAI) sur les mots fournis par l\'utilisateur avant de générer des histoires, et les modèles d\'IA sous-jacents reçoivent des instructions pour rediriger le vocabulaire sensible vers des contextes neutres et éducatifs. Cependant, aucun filtre automatisé n\'est parfait.</p>
+        <p><strong>Signalement :</strong> Si vous rencontrez du contenu que vous estimez contraire à ces Conditions, signalez-le via l\'option Report dans l\'application ou par e-mail à <a href="mailto:bukwa.ai@icloud.com">bukwa.ai@icloud.com</a>. Nous visons à répondre aux signalements dans les 24 heures.</p>
+        <p><strong>Application :</strong> Nous nous réservons le droit, sans en avoir l\'obligation, de surveiller, examiner, supprimer ou refuser de générer tout contenu qui viole ces Conditions. Les utilisateurs qui violent à plusieurs reprises cette politique de Contenu interdit pourront voir leur compte suspendu ou résilié sans remboursement.</p>
+      ` },
+      { h: "10. Propriété intellectuelle", body: `
         <h3>9.1 Propriété de l'Application</h3>
         <p>L'Application, y compris son design, son code, ses fonctionnalités et son image de marque, est la propriété intellectuelle du Développeur et est protégée par le droit d'auteur et d'autres lois sur la propriété intellectuelle.</p>
         <h3>9.2 Licence du contenu IA</h3>
         <p>Les histoires et traductions générées par IA produites via votre utilisation de l'Application sont fournies pour votre usage personnel et non commercial. Vous pouvez enregistrer et partager les histoires générées pour votre compte, mais vous ne pouvez pas les distribuer commercialement ni les publier à grande échelle.</p>
       ` },
-      { h: "10. Services tiers", body: `<p>L'Application s'appuie sur des services tiers pour la génération de contenu IA, l'authentification et le stockage des données. La disponibilité et les performances de ces services échappent à notre contrôle. Nous ne sommes pas responsables des interruptions, erreurs ou limitations causées par des services tiers.</p>` },
-      { h: "11. Exclusion de garanties", body: `<p><strong>L'Application est fournie « en l'état » et « selon disponibilité », sans garantie d'aucune sorte, expresse ou implicite, y compris, mais sans s'y limiter, les garanties implicites de qualité marchande, d'adéquation à un usage particulier et de non-contrefaçon. Nous ne garantissons pas que l'Application sera ininterrompue, sans erreur ou sécurisée.</strong></p>` },
-      { h: "12. Limitation de responsabilité", body: `<p><strong>Dans toute la mesure permise par la loi, le Développeur ne sera pas responsable des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs, ni de toute perte de profits, de données ou de fonds de commerce, résultant de ou en lien avec votre utilisation de l'Application. Notre responsabilité totale n'excédera pas le montant que vous avez payé pour l'Application au cours des douze (12) mois précédant la réclamation.</strong></p>` },
-      { h: "13. Disponibilité du service", body: `<p>Nous nous réservons le droit de modifier, suspendre ou interrompre l'Application ou toute partie de celle-ci à tout moment, avec ou sans préavis. En cas d'interruption du service, les abonnés actifs recevront un remboursement au prorata de la partie inutilisée de leur abonnement.</p>` },
-      { h: "14. Modifications des présentes Conditions", body: `<p>Nous pouvons mettre à jour ces Conditions de temps à autre. Nous vous informerons des modifications substantielles via l'Application ou par d'autres moyens raisonnables. Votre utilisation continue de l'Application après la publication des modifications constitue votre acceptation des Conditions révisées.</p>` },
-      { h: "15. Contrat de licence utilisateur final", body: `<p>L'utilisation de l'Application est également soumise au Contrat de licence utilisateur final standard (EULA) d'Apple, disponible à l'adresse <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a>.</p>` }
+      { h: "11. Services tiers", body: `<p>L'Application s'appuie sur des services tiers pour la génération de contenu IA, l'authentification et le stockage des données. La disponibilité et les performances de ces services échappent à notre contrôle. Nous ne sommes pas responsables des interruptions, erreurs ou limitations causées par des services tiers.</p>` },
+      { h: "12. Exclusion de garanties", body: `<p><strong>L'Application est fournie « en l'état » et « selon disponibilité », sans garantie d'aucune sorte, expresse ou implicite, y compris, mais sans s'y limiter, les garanties implicites de qualité marchande, d'adéquation à un usage particulier et de non-contrefaçon. Nous ne garantissons pas que l'Application sera ininterrompue, sans erreur ou sécurisée.</strong></p>` },
+      { h: "13. Limitation de responsabilité", body: `<p><strong>Dans toute la mesure permise par la loi, le Développeur ne sera pas responsable des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs, ni de toute perte de profits, de données ou de fonds de commerce, résultant de ou en lien avec votre utilisation de l'Application. Notre responsabilité totale n'excédera pas le montant que vous avez payé pour l'Application au cours des douze (12) mois précédant la réclamation.</strong></p>` },
+      { h: "14. Disponibilité du service", body: `<p>Nous nous réservons le droit de modifier, suspendre ou interrompre l'Application ou toute partie de celle-ci à tout moment, avec ou sans préavis. En cas d'interruption du service, les abonnés actifs recevront un remboursement au prorata de la partie inutilisée de leur abonnement.</p>` },
+      { h: "15. Modifications des présentes Conditions", body: `<p>Nous pouvons mettre à jour ces Conditions de temps à autre. Nous vous informerons des modifications substantielles via l'Application ou par d'autres moyens raisonnables. Votre utilisation continue de l'Application après la publication des modifications constitue votre acceptation des Conditions révisées.</p>` },
+      { h: "16. Contrat de licence utilisateur final", body: `<p>L'utilisation de l'Application est également soumise au Contrat de licence utilisateur final standard (EULA) d'Apple, disponible à l'adresse <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a>.</p>` }
     ],
-    contactTitle: "16. Coordonnées",
+    contactTitle: "17. Coordonnées",
     contactIntro: "Si vous avez des questions concernant ces Conditions, veuillez nous contacter à :",
     labelEmail: "E-mail :",
     labelWebsite: "Site web :",
@@ -432,7 +488,7 @@ const LANGS = {
     name: "Deutsch",
     title: "Nutzungsbedingungen",
     subtitle: "Bukwa — KI-Geschichten zum Sprachenlernen",
-    updated: "Letzte Aktualisierung: 10. April 2026",
+    updated: "Letzte Aktualisierung: 2. Mai 2026",
     intro: `Diese Nutzungsbedingungen („Bedingungen") regeln Ihre Nutzung der mobilen Anwendung Bukwa („App"), bereitgestellt von Oleksandr („Entwickler", „wir", „uns" oder „unser"). Mit dem Herunterladen, Installieren oder Verwenden der App erklären Sie sich damit einverstanden, an diese Bedingungen gebunden zu sein. Wenn Sie mit diesen Bedingungen nicht einverstanden sind, verwenden Sie die App nicht.`,
     sections: [
       { h: "1. Beschreibung des Dienstes", body: `<p>Bukwa ist eine Sprachlern-App, mit der Nutzer Vokabellisten erstellen, KI-gestützte Geschichten mit integrierten Glossaren generieren, mit Karteikarten üben und Wörter mithilfe künstlicher Intelligenz übersetzen können. Die App unterstützt über 30 Sprachen.</p>` },
@@ -483,23 +539,37 @@ const LANGS = {
           <li>automatisierte Tools, Bots oder Skripte zu verwenden, um über die normale Nutzung hinaus auf die App zuzugreifen;</li>
           <li>zu versuchen, Nutzungslimits oder Abonnementanforderungen zu umgehen;</li>
           <li>die App oder ihre Inhalte weiterzuverkaufen, weiterzuverbreiten oder kommerziell zu nutzen;</li>
-          <li>die App zur Erstellung von hasserfüllten, schädlichen oder beleidigenden Inhalten zu verwenden.</li>
         </ul>
       ` },
-      { h: "9. Geistiges Eigentum", body: `
+      { h: "9. Verbotene Inhalte", body: `
+        <p>Sie stimmen zu, die App, einschließlich ihrer KI-gestützten Geschichten- und Übersetzungsfunktionen, nicht zu verwenden, um Inhalte zu generieren, anzufordern, zu speichern oder zu teilen, die:</p>
+        <ul>
+          <li>Minderjährige in irgendeiner Weise sexualisieren oder Material über sexuellen Missbrauch von Kindern (CSAM) darstellen — für diese Kategorie gilt Null-Toleranz;</li>
+          <li>expliziten sexuellen Inhalt, Pornografie oder grafische Nacktheit enthalten;</li>
+          <li>Gewalt, Selbstverletzung, Selbstmord oder Terrorismus fördern, verherrlichen oder Anweisungen dazu geben;</li>
+          <li>Hass, Belästigung oder Diskriminierung gegen Einzelpersonen oder Gruppen aufgrund von Rasse, ethnischer Zugehörigkeit, Religion, Geschlecht, sexueller Orientierung, Behinderung oder anderen geschützten Merkmalen fördern;</li>
+          <li>Anweisungen für illegale Aktivitäten geben, einschließlich der Herstellung von Waffen, Drogen oder anderen kontrollierten Substanzen;</li>
+          <li>die Rechte am geistigen Eigentum, an der Privatsphäre oder am Recht am eigenen Bild Dritter verletzen;</li>
+          <li>verleumderisch, irreführend, betrügerisch sind oder dazu dienen, eine andere Person zu imitieren.</li>
+        </ul>
+        <p>Die App wendet automatische Inhaltsfilterung (über OpenAI\'s Moderation API) auf vom Nutzer bereitgestellte Vokabeln an, bevor Geschichten generiert werden, und die zugrunde liegenden KI-Modelle werden angewiesen, sensible Vokabeln in neutrale, pädagogische Kontexte umzuleiten. Allerdings ist kein automatisierter Filter perfekt.</p>
+        <p><strong>Meldung:</strong> Wenn Sie auf Inhalte stoßen, die Ihrer Meinung nach gegen diese Bedingungen verstoßen, melden Sie diese über die Report-Option in der App oder per E-Mail an <a href="mailto:bukwa.ai@icloud.com">bukwa.ai@icloud.com</a>. Wir bemühen uns, auf Meldungen innerhalb von 24 Stunden zu antworten.</p>
+        <p><strong>Durchsetzung:</strong> Wir behalten uns das Recht vor, jedoch ohne Verpflichtung, Inhalte, die gegen diese Bedingungen verstoßen, zu überwachen, zu prüfen, zu entfernen oder die Generierung zu verweigern. Benutzer, die wiederholt gegen diese Richtlinie für verbotene Inhalte verstoßen, können ohne Erstattung gesperrt oder gekündigt werden.</p>
+      ` },
+      { h: "10. Geistiges Eigentum", body: `
         <h3>9.1 Eigentum an der App</h3>
         <p>Die App, einschließlich ihres Designs, Codes, ihrer Funktionen und ihres Brandings, ist geistiges Eigentum des Entwicklers und durch Urheberrechte und andere Gesetze zum Schutz des geistigen Eigentums geschützt.</p>
         <h3>9.2 Lizenz für KI-Inhalte</h3>
         <p>Von der KI generierte Geschichten und Übersetzungen, die durch Ihre Nutzung der App erzeugt werden, werden Ihnen für Ihren persönlichen, nicht kommerziellen Gebrauch zur Verfügung gestellt. Sie dürfen Geschichten, die für Ihr Konto erstellt wurden, speichern und teilen, dürfen sie jedoch nicht kommerziell verbreiten oder in großem Umfang veröffentlichen.</p>
       ` },
-      { h: "10. Dienste Dritter", body: `<p>Die App nutzt Dienste Dritter für die Erstellung von KI-Inhalten, die Authentifizierung und die Datenspeicherung. Die Verfügbarkeit und Leistung dieser Dienste liegen außerhalb unserer Kontrolle. Wir sind nicht verantwortlich für Unterbrechungen, Fehler oder Einschränkungen, die durch Dienste Dritter verursacht werden.</p>` },
-      { h: "11. Haftungsausschluss", body: `<p><strong>Die App wird „wie besehen" und „wie verfügbar" ohne jegliche ausdrückliche oder stillschweigende Gewährleistung bereitgestellt, einschließlich, aber nicht beschränkt auf stillschweigende Gewährleistungen der Marktgängigkeit, der Eignung für einen bestimmten Zweck und der Nichtverletzung von Rechten. Wir gewährleisten nicht, dass die App ununterbrochen, fehlerfrei oder sicher sein wird.</strong></p>` },
-      { h: "12. Haftungsbeschränkung", body: `<p><strong>Soweit gesetzlich zulässig, haftet der Entwickler nicht für indirekte, zufällige, besondere, Folge- oder Strafschäden oder für entgangenen Gewinn, Datenverlust oder Verlust des Firmenwerts, die sich aus oder in Verbindung mit Ihrer Nutzung der App ergeben. Unsere Gesamthaftung übersteigt nicht den Betrag, den Sie in den zwölf (12) Monaten vor dem Anspruch für die App bezahlt haben.</strong></p>` },
-      { h: "13. Verfügbarkeit des Dienstes", body: `<p>Wir behalten uns das Recht vor, die App oder Teile davon jederzeit mit oder ohne Vorankündigung zu ändern, auszusetzen oder einzustellen. Im Falle einer Einstellung des Dienstes erhalten aktive Abonnenten eine anteilige Rückerstattung für den ungenutzten Teil ihres Abonnements.</p>` },
-      { h: "14. Änderungen dieser Bedingungen", body: `<p>Wir können diese Bedingungen von Zeit zu Zeit aktualisieren. Über wesentliche Änderungen informieren wir Sie über die App oder andere angemessene Mittel. Ihre fortgesetzte Nutzung der App nach Veröffentlichung von Änderungen gilt als Ihre Zustimmung zu den überarbeiteten Bedingungen.</p>` },
-      { h: "15. Endbenutzer-Lizenzvereinbarung", body: `<p>Die Nutzung der App unterliegt außerdem der Standard-Endbenutzer-Lizenzvereinbarung (EULA) von Apple, verfügbar unter <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a>.</p>` }
+      { h: "11. Dienste Dritter", body: `<p>Die App nutzt Dienste Dritter für die Erstellung von KI-Inhalten, die Authentifizierung und die Datenspeicherung. Die Verfügbarkeit und Leistung dieser Dienste liegen außerhalb unserer Kontrolle. Wir sind nicht verantwortlich für Unterbrechungen, Fehler oder Einschränkungen, die durch Dienste Dritter verursacht werden.</p>` },
+      { h: "12. Haftungsausschluss", body: `<p><strong>Die App wird „wie besehen" und „wie verfügbar" ohne jegliche ausdrückliche oder stillschweigende Gewährleistung bereitgestellt, einschließlich, aber nicht beschränkt auf stillschweigende Gewährleistungen der Marktgängigkeit, der Eignung für einen bestimmten Zweck und der Nichtverletzung von Rechten. Wir gewährleisten nicht, dass die App ununterbrochen, fehlerfrei oder sicher sein wird.</strong></p>` },
+      { h: "13. Haftungsbeschränkung", body: `<p><strong>Soweit gesetzlich zulässig, haftet der Entwickler nicht für indirekte, zufällige, besondere, Folge- oder Strafschäden oder für entgangenen Gewinn, Datenverlust oder Verlust des Firmenwerts, die sich aus oder in Verbindung mit Ihrer Nutzung der App ergeben. Unsere Gesamthaftung übersteigt nicht den Betrag, den Sie in den zwölf (12) Monaten vor dem Anspruch für die App bezahlt haben.</strong></p>` },
+      { h: "14. Verfügbarkeit des Dienstes", body: `<p>Wir behalten uns das Recht vor, die App oder Teile davon jederzeit mit oder ohne Vorankündigung zu ändern, auszusetzen oder einzustellen. Im Falle einer Einstellung des Dienstes erhalten aktive Abonnenten eine anteilige Rückerstattung für den ungenutzten Teil ihres Abonnements.</p>` },
+      { h: "15. Änderungen dieser Bedingungen", body: `<p>Wir können diese Bedingungen von Zeit zu Zeit aktualisieren. Über wesentliche Änderungen informieren wir Sie über die App oder andere angemessene Mittel. Ihre fortgesetzte Nutzung der App nach Veröffentlichung von Änderungen gilt als Ihre Zustimmung zu den überarbeiteten Bedingungen.</p>` },
+      { h: "16. Endbenutzer-Lizenzvereinbarung", body: `<p>Die Nutzung der App unterliegt außerdem der Standard-Endbenutzer-Lizenzvereinbarung (EULA) von Apple, verfügbar unter <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a>.</p>` }
     ],
-    contactTitle: "16. Kontaktinformationen",
+    contactTitle: "17. Kontaktinformationen",
     contactIntro: "Bei Fragen zu diesen Bedingungen kontaktieren Sie uns bitte unter:",
     labelEmail: "E-Mail:",
     labelWebsite: "Website:",
@@ -510,7 +580,7 @@ const LANGS = {
     name: "Italiano",
     title: "Termini di servizio",
     subtitle: "Bukwa — Storie IA per l'apprendimento delle lingue",
-    updated: "Ultimo aggiornamento: 10 aprile 2026",
+    updated: "Ultimo aggiornamento: 2 maggio 2026",
     intro: `I presenti Termini di servizio (i "Termini") regolano l'uso dell'applicazione mobile Bukwa (l'"App") fornita da Oleksandr ("Sviluppatore", "noi", "ci" o "nostro"). Scaricando, installando o utilizzando l'App, accetti di essere vincolato dai presenti Termini. Se non accetti questi Termini, non utilizzare l'App.`,
     sections: [
       { h: "1. Descrizione del servizio", body: `<p>Bukwa è un'applicazione per l'apprendimento delle lingue che consente agli utenti di creare vocabolari, generare storie con IA e glossari integrati, esercitarsi con flashcard e tradurre parole tramite intelligenza artificiale. L'App supporta oltre 30 lingue.</p>` },
@@ -561,23 +631,37 @@ const LANGS = {
           <li>utilizzare strumenti automatizzati, bot o script per accedere all'App al di fuori dell'uso normale;</li>
           <li>tentare di aggirare i limiti di utilizzo o i requisiti di abbonamento;</li>
           <li>rivendere, ridistribuire o sfruttare commercialmente l'App o i suoi contenuti;</li>
-          <li>utilizzare l'App per generare contenuti odiosi, dannosi o offensivi.</li>
         </ul>
       ` },
-      { h: "9. Proprietà intellettuale", body: `
+      { h: "9. Contenuti vietati", body: `
+        <p>Accetti di non utilizzare l\'App, incluse le sue funzionalità di storie e traduzione tramite IA, per generare, richiedere, archiviare o condividere contenuti che:</p>
+        <ul>
+          <li>sessualizzino in qualsiasi modo i minori o rappresentino materiale di abuso sessuale su minori (CSAM) — tolleranza zero per questa categoria;</li>
+          <li>contengano contenuti sessualmente espliciti, pornografia o nudità grafica;</li>
+          <li>promuovano, glorifichino o forniscano istruzioni per violenza, autolesionismo, suicidio o terrorismo;</li>
+          <li>promuovano odio, molestie o discriminazione contro qualsiasi individuo o gruppo in base a razza, etnia, religione, genere, orientamento sessuale, disabilità o altra caratteristica protetta;</li>
+          <li>forniscano istruzioni per attività illegali, inclusa la produzione di armi, droghe o altre sostanze controllate;</li>
+          <li>violino i diritti di proprietà intellettuale, privacy o pubblicità di qualsiasi terza parte;</li>
+          <li>siano diffamatori, ingannevoli, fraudolenti o destinati a impersonare un\'altra persona.</li>
+        </ul>
+        <p>L\'App applica un filtraggio automatico dei contenuti (tramite l\'API di Moderazione di OpenAI) ai vocaboli forniti dall\'utente prima di generare le storie, e i modelli di IA sottostanti sono istruiti a reindirizzare il vocabolario sensibile in contesti neutri ed educativi. Tuttavia, nessun filtro automatico è perfetto.</p>
+        <p><strong>Segnalazione:</strong> Se incontri contenuti che ritieni violino questi Termini, segnalali tramite l\'opzione Report nell\'app o via email a <a href="mailto:bukwa.ai@icloud.com">bukwa.ai@icloud.com</a>. Cerchiamo di rispondere alle segnalazioni entro 24 ore.</p>
+        <p><strong>Applicazione:</strong> Ci riserviamo il diritto, ma non abbiamo l\'obbligo, di monitorare, esaminare, rimuovere o rifiutare di generare qualsiasi contenuto che violi questi Termini. Gli utenti che violano ripetutamente questa Politica sui Contenuti Vietati potranno avere il loro account sospeso o terminato senza rimborso.</p>
+      ` },
+      { h: "10. Proprietà intellettuale", body: `
         <h3>9.1 Proprietà dell'App</h3>
         <p>L'App, inclusi design, codice, funzionalità e branding, è proprietà intellettuale dello Sviluppatore ed è protetta dal diritto d'autore e da altre leggi sulla proprietà intellettuale.</p>
         <h3>9.2 Licenza dei contenuti IA</h3>
         <p>Le storie e le traduzioni generate dall'IA prodotte tramite il tuo uso dell'App sono fornite per uso personale e non commerciale. Puoi salvare e condividere le storie generate per il tuo account, ma non puoi distribuirle commercialmente o pubblicarle su larga scala.</p>
       ` },
-      { h: "10. Servizi di terze parti", body: `<p>L'App si avvale di servizi di terze parti per la generazione di contenuti IA, l'autenticazione e l'archiviazione dei dati. La disponibilità e le prestazioni di tali servizi sono al di fuori del nostro controllo. Non siamo responsabili di interruzioni, errori o limitazioni causati da servizi di terze parti.</p>` },
-      { h: "11. Esclusione di garanzie", body: `<p><strong>L'App è fornita "così com'è" e "come disponibile", senza garanzie di alcun tipo, esplicite o implicite, incluse, a titolo esemplificativo ma non esaustivo, le garanzie implicite di commerciabilità, idoneità per uno scopo particolare e non violazione. Non garantiamo che l'App sarà ininterrotta, priva di errori o sicura.</strong></p>` },
-      { h: "12. Limitazione di responsabilità", body: `<p><strong>Nella massima misura consentita dalla legge, lo Sviluppatore non sarà responsabile per danni indiretti, accidentali, speciali, consequenziali o punitivi, né per perdita di profitti, dati o avviamento, derivanti da o in connessione con l'uso dell'App. La nostra responsabilità totale non supererà l'importo che hai pagato per l'App nei dodici (12) mesi precedenti la richiesta.</strong></p>` },
-      { h: "13. Disponibilità del servizio", body: `<p>Ci riserviamo il diritto di modificare, sospendere o interrompere l'App o qualsiasi sua parte in qualsiasi momento, con o senza preavviso. In caso di interruzione del servizio, gli abbonati attivi riceveranno un rimborso proporzionale per la parte non utilizzata del loro abbonamento.</p>` },
-      { h: "14. Modifiche ai presenti Termini", body: `<p>Possiamo aggiornare questi Termini di tanto in tanto. Ti informeremo delle modifiche sostanziali tramite l'App o con altri mezzi ragionevoli. L'uso continuato dell'App dopo la pubblicazione delle modifiche costituisce la tua accettazione dei Termini revisionati.</p>` },
-      { h: "15. Contratto di licenza con l'utente finale", body: `<p>L'uso dell'App è inoltre soggetto al Contratto di licenza standard con l'utente finale (EULA) di Apple, disponibile all'indirizzo <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a>.</p>` }
+      { h: "11. Servizi di terze parti", body: `<p>L'App si avvale di servizi di terze parti per la generazione di contenuti IA, l'autenticazione e l'archiviazione dei dati. La disponibilità e le prestazioni di tali servizi sono al di fuori del nostro controllo. Non siamo responsabili di interruzioni, errori o limitazioni causati da servizi di terze parti.</p>` },
+      { h: "12. Esclusione di garanzie", body: `<p><strong>L'App è fornita "così com'è" e "come disponibile", senza garanzie di alcun tipo, esplicite o implicite, incluse, a titolo esemplificativo ma non esaustivo, le garanzie implicite di commerciabilità, idoneità per uno scopo particolare e non violazione. Non garantiamo che l'App sarà ininterrotta, priva di errori o sicura.</strong></p>` },
+      { h: "13. Limitazione di responsabilità", body: `<p><strong>Nella massima misura consentita dalla legge, lo Sviluppatore non sarà responsabile per danni indiretti, accidentali, speciali, consequenziali o punitivi, né per perdita di profitti, dati o avviamento, derivanti da o in connessione con l'uso dell'App. La nostra responsabilità totale non supererà l'importo che hai pagato per l'App nei dodici (12) mesi precedenti la richiesta.</strong></p>` },
+      { h: "14. Disponibilità del servizio", body: `<p>Ci riserviamo il diritto di modificare, sospendere o interrompere l'App o qualsiasi sua parte in qualsiasi momento, con o senza preavviso. In caso di interruzione del servizio, gli abbonati attivi riceveranno un rimborso proporzionale per la parte non utilizzata del loro abbonamento.</p>` },
+      { h: "15. Modifiche ai presenti Termini", body: `<p>Possiamo aggiornare questi Termini di tanto in tanto. Ti informeremo delle modifiche sostanziali tramite l'App o con altri mezzi ragionevoli. L'uso continuato dell'App dopo la pubblicazione delle modifiche costituisce la tua accettazione dei Termini revisionati.</p>` },
+      { h: "16. Contratto di licenza con l'utente finale", body: `<p>L'uso dell'App è inoltre soggetto al Contratto di licenza standard con l'utente finale (EULA) di Apple, disponibile all'indirizzo <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a>.</p>` }
     ],
-    contactTitle: "16. Informazioni di contatto",
+    contactTitle: "17. Informazioni di contatto",
     contactIntro: "Per qualsiasi domanda relativa a questi Termini, contattaci:",
     labelEmail: "E-mail:",
     labelWebsite: "Sito web:",
@@ -588,7 +672,7 @@ const LANGS = {
     name: "Polski",
     title: "Warunki świadczenia usług",
     subtitle: "Bukwa — Historie AI do nauki języków",
-    updated: "Ostatnia aktualizacja: 10 kwietnia 2026 r.",
+    updated: "Ostatnia aktualizacja: 2 maja 2026 r.",
     intro: `Niniejsze Warunki świadczenia usług („Warunki") regulują korzystanie przez Ciebie z aplikacji mobilnej Bukwa („Aplikacja") dostarczanej przez Oleksandra („Deweloper", „my", „nas" lub „nasze"). Pobierając, instalując lub korzystając z Aplikacji, wyrażasz zgodę na związanie się niniejszymi Warunkami. Jeśli nie akceptujesz tych Warunków, nie korzystaj z Aplikacji.`,
     sections: [
       { h: "1. Opis usługi", body: `<p>Bukwa to aplikacja do nauki języków, która umożliwia użytkownikom tworzenie słowników, generowanie historii wspieranych przez AI z wbudowanymi glosariuszami, ćwiczenia z fiszkami i tłumaczenie słów za pomocą sztucznej inteligencji. Aplikacja obsługuje ponad 30 języków.</p>` },
@@ -639,23 +723,37 @@ const LANGS = {
           <li>używać zautomatyzowanych narzędzi, botów lub skryptów do uzyskiwania dostępu do Aplikacji wykraczającego poza normalne użytkowanie;</li>
           <li>próbować omijać limity użytkowania lub wymagania subskrypcji;</li>
           <li>odsprzedawać, redystrybuować ani komercyjnie wykorzystywać Aplikacji ani jej treści;</li>
-          <li>używać Aplikacji do generowania treści nienawistnych, szkodliwych lub obraźliwych.</li>
         </ul>
       ` },
-      { h: "9. Własność intelektualna", body: `
+      { h: "9. Zakazane treści", body: `
+        <p>Zgadzasz się nie używać Aplikacji, w tym jej funkcji historii i tłumaczeń AI, do generowania, żądania, przechowywania lub udostępniania treści, które:</p>
+        <ul>
+          <li>w jakikolwiek sposób seksualizują nieletnich lub przedstawiają materiały dotyczące seksualnego wykorzystywania dzieci (CSAM) — w tej kategorii obowiązuje zero tolerancji;</li>
+          <li>zawierają jawnie seksualną treść, pornografię lub graficzną nagość;</li>
+          <li>promują, gloryfikują lub zawierają instrukcje przemocy, samookaleczenia, samobójstwa lub terroryzmu;</li>
+          <li>promują nienawiść, nękanie lub dyskryminację jakiejkolwiek osoby lub grupy ze względu na rasę, pochodzenie etniczne, religię, płeć, orientację seksualną, niepełnosprawność lub inną cechę chronioną;</li>
+          <li>zawierają instrukcje dotyczące nielegalnych działań, w tym wytwarzania broni, narkotyków lub innych substancji kontrolowanych;</li>
+          <li>naruszają prawa własności intelektualnej, prywatności lub wizerunku osób trzecich;</li>
+          <li>są zniesławiające, oszukańcze, wprowadzające w błąd lub mają na celu podszywanie się pod inną osobę.</li>
+        </ul>
+        <p>Aplikacja stosuje automatyczne filtrowanie treści (poprzez OpenAI Moderation API) do słów dostarczonych przez użytkownika przed wygenerowaniem historii, a bazowe modele AI są instruowane, aby przekierowywać wrażliwe słownictwo w neutralne, edukacyjne konteksty. Jednak żaden zautomatyzowany filtr nie jest idealny.</p>
+        <p><strong>Zgłaszanie:</strong> Jeśli napotkasz treści, które według Ciebie naruszają niniejsze Warunki, zgłoś je za pomocą opcji Report w aplikacji lub e-mailem na <a href="mailto:bukwa.ai@icloud.com">bukwa.ai@icloud.com</a>. Staramy się odpowiadać na zgłoszenia w ciągu 24 godzin.</p>
+        <p><strong>Egzekwowanie:</strong> Zastrzegamy sobie prawo, ale nie obowiązek, monitorowania, przeglądania, usuwania lub odmowy generowania jakichkolwiek treści naruszających niniejsze Warunki. Użytkownicy wielokrotnie naruszający niniejszą Politykę Zakazanych Treści mogą mieć swoje konto zawieszone lub usunięte bez zwrotu pieniędzy.</p>
+      ` },
+      { h: "10. Własność intelektualna", body: `
         <h3>9.1 Własność Aplikacji</h3>
         <p>Aplikacja, w tym jej projekt, kod, funkcje i branding, stanowi własność intelektualną Dewelopera i jest chroniona prawem autorskim oraz innymi przepisami dotyczącymi własności intelektualnej.</p>
         <h3>9.2 Licencja na treści AI</h3>
         <p>Historie i tłumaczenia generowane przez AI w wyniku korzystania przez Ciebie z Aplikacji są dostarczane do Twojego osobistego, niekomercyjnego użytku. Możesz zapisywać i udostępniać historie wygenerowane dla Twojego konta, ale nie możesz ich komercyjnie dystrybuować ani publikować na dużą skalę.</p>
       ` },
-      { h: "10. Usługi stron trzecich", body: `<p>Aplikacja korzysta z usług stron trzecich do generowania treści AI, uwierzytelniania i przechowywania danych. Dostępność i wydajność tych usług pozostają poza naszą kontrolą. Nie ponosimy odpowiedzialności za przerwy, błędy ani ograniczenia spowodowane przez usługi stron trzecich.</p>` },
-      { h: "11. Wyłączenie gwarancji", body: `<p><strong>Aplikacja jest dostarczana „tak jak jest" i „w miarę dostępności", bez jakichkolwiek gwarancji, wyraźnych lub dorozumianych, w tym między innymi dorozumianych gwarancji przydatności handlowej, przydatności do określonego celu i nienaruszania praw. Nie gwarantujemy, że Aplikacja będzie działać nieprzerwanie, bezbłędnie lub bezpiecznie.</strong></p>` },
-      { h: "12. Ograniczenie odpowiedzialności", body: `<p><strong>W maksymalnym zakresie dozwolonym przez prawo Deweloper nie ponosi odpowiedzialności za jakiekolwiek szkody pośrednie, przypadkowe, szczególne, wynikowe lub karne, ani za utratę zysków, danych lub renomy wynikające z lub w związku z korzystaniem przez Ciebie z Aplikacji. Nasza całkowita odpowiedzialność nie przekroczy kwoty, którą zapłaciłeś za Aplikację w ciągu dwunastu (12) miesięcy poprzedzających roszczenie.</strong></p>` },
-      { h: "13. Dostępność usługi", body: `<p>Zastrzegamy sobie prawo do modyfikowania, zawieszania lub zaprzestania działania Aplikacji lub jakiejkolwiek jej części w dowolnym czasie, z powiadomieniem lub bez. W przypadku zaprzestania świadczenia usługi aktywni subskrybenci otrzymają proporcjonalny zwrot za niewykorzystaną część subskrypcji.</p>` },
-      { h: "14. Zmiany niniejszych Warunków", body: `<p>Możemy aktualizować niniejsze Warunki od czasu do czasu. O istotnych zmianach poinformujemy Cię za pośrednictwem Aplikacji lub innymi rozsądnymi środkami. Dalsze korzystanie z Aplikacji po opublikowaniu zmian stanowi Twoją akceptację zaktualizowanych Warunków.</p>` },
-      { h: "15. Umowa licencyjna użytkownika końcowego", body: `<p>Korzystanie z Aplikacji podlega również Standardowej umowie licencyjnej użytkownika końcowego (EULA) firmy Apple, dostępnej pod adresem <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a>.</p>` }
+      { h: "11. Usługi stron trzecich", body: `<p>Aplikacja korzysta z usług stron trzecich do generowania treści AI, uwierzytelniania i przechowywania danych. Dostępność i wydajność tych usług pozostają poza naszą kontrolą. Nie ponosimy odpowiedzialności za przerwy, błędy ani ograniczenia spowodowane przez usługi stron trzecich.</p>` },
+      { h: "12. Wyłączenie gwarancji", body: `<p><strong>Aplikacja jest dostarczana „tak jak jest" i „w miarę dostępności", bez jakichkolwiek gwarancji, wyraźnych lub dorozumianych, w tym między innymi dorozumianych gwarancji przydatności handlowej, przydatności do określonego celu i nienaruszania praw. Nie gwarantujemy, że Aplikacja będzie działać nieprzerwanie, bezbłędnie lub bezpiecznie.</strong></p>` },
+      { h: "13. Ograniczenie odpowiedzialności", body: `<p><strong>W maksymalnym zakresie dozwolonym przez prawo Deweloper nie ponosi odpowiedzialności za jakiekolwiek szkody pośrednie, przypadkowe, szczególne, wynikowe lub karne, ani za utratę zysków, danych lub renomy wynikające z lub w związku z korzystaniem przez Ciebie z Aplikacji. Nasza całkowita odpowiedzialność nie przekroczy kwoty, którą zapłaciłeś za Aplikację w ciągu dwunastu (12) miesięcy poprzedzających roszczenie.</strong></p>` },
+      { h: "14. Dostępność usługi", body: `<p>Zastrzegamy sobie prawo do modyfikowania, zawieszania lub zaprzestania działania Aplikacji lub jakiejkolwiek jej części w dowolnym czasie, z powiadomieniem lub bez. W przypadku zaprzestania świadczenia usługi aktywni subskrybenci otrzymają proporcjonalny zwrot za niewykorzystaną część subskrypcji.</p>` },
+      { h: "15. Zmiany niniejszych Warunków", body: `<p>Możemy aktualizować niniejsze Warunki od czasu do czasu. O istotnych zmianach poinformujemy Cię za pośrednictwem Aplikacji lub innymi rozsądnymi środkami. Dalsze korzystanie z Aplikacji po opublikowaniu zmian stanowi Twoją akceptację zaktualizowanych Warunków.</p>` },
+      { h: "16. Umowa licencyjna użytkownika końcowego", body: `<p>Korzystanie z Aplikacji podlega również Standardowej umowie licencyjnej użytkownika końcowego (EULA) firmy Apple, dostępnej pod adresem <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a>.</p>` }
     ],
-    contactTitle: "16. Informacje kontaktowe",
+    contactTitle: "17. Informacje kontaktowe",
     contactIntro: "W przypadku pytań dotyczących niniejszych Warunków skontaktuj się z nami:",
     labelEmail: "E-mail:",
     labelWebsite: "Strona internetowa:",
@@ -666,7 +764,7 @@ const LANGS = {
     name: "Русский",
     title: "Условия использования",
     subtitle: "Bukwa — ИИ-истории для изучения языков",
-    updated: "Последнее обновление: 10 апреля 2026 г.",
+    updated: "Последнее обновление: 2 мая 2026 г.",
     intro: `Настоящие Условия использования («Условия») регулируют использование вами мобильного приложения Bukwa («Приложение»), предоставляемого Олександром («Разработчик», «мы», «нас» или «наше»). Загружая, устанавливая или используя Приложение, вы соглашаетесь соблюдать данные Условия. Если вы не согласны с этими Условиями, не используйте Приложение.`,
     sections: [
       { h: "1. Описание сервиса", body: `<p>Bukwa — это приложение для изучения языков, которое позволяет пользователям создавать словари, генерировать истории с поддержкой ИИ со встроенными глоссариями, тренироваться с карточками и переводить слова с помощью искусственного интеллекта. Приложение поддерживает более 30 языков.</p>` },
@@ -717,23 +815,37 @@ const LANGS = {
           <li>использовать автоматизированные инструменты, ботов или скрипты для доступа к Приложению вне рамок обычного использования;</li>
           <li>пытаться обходить лимиты использования или требования подписки;</li>
           <li>перепродавать, распространять или коммерчески эксплуатировать Приложение или его контент;</li>
-          <li>использовать Приложение для создания контента, который является ненавистническим, вредным или оскорбительным.</li>
         </ul>
       ` },
-      { h: "9. Интеллектуальная собственность", body: `
+      { h: "9. Запрещённый контент", body: `
+        <p>Вы соглашаетесь не использовать Приложение, включая функции ИИ-историй и перевода, для создания, запроса, хранения или распространения контента, который:</p>
+        <ul>
+          <li>сексуализирует несовершеннолетних любым способом или изображает материалы сексуального насилия над детьми (CSAM) — для этой категории действует нулевая толерантность;</li>
+          <li>содержит откровенно сексуальный контент, порнографию или графическую наготу;</li>
+          <li>пропагандирует, прославляет или предоставляет инструкции по насилию, самоповреждению, самоубийству или терроризму;</li>
+          <li>пропагандирует ненависть, преследование или дискриминацию любого лица или группы на основе расы, этнической принадлежности, религии, пола, сексуальной ориентации, инвалидности или другой защищённой характеристики;</li>
+          <li>предоставляет инструкции по незаконной деятельности, включая изготовление оружия, наркотиков или других контролируемых веществ;</li>
+          <li>нарушает права интеллектуальной собственности, конфиденциальности или публичности любой третьей стороны;</li>
+          <li>является клеветническим, обманным, мошенническим или предназначен для выдачи себя за другое лицо.</li>
+        </ul>
+        <p>Приложение применяет автоматическую фильтрацию контента (через OpenAI Moderation API) к словам, предоставленным пользователем, перед генерацией историй, а базовые модели ИИ инструктируются перенаправлять чувствительную лексику в нейтральные, образовательные контексты. Однако ни один автоматический фильтр не идеален.</p>
+        <p><strong>Сообщение:</strong> Если вы столкнулись с контентом, который, по вашему мнению, нарушает настоящие Условия, сообщите об этом через опцию Report в приложении или по электронной почте на <a href="mailto:bukwa.ai@icloud.com">bukwa.ai@icloud.com</a>. Мы стремимся реагировать на жалобы в течение 24 часов.</p>
+        <p><strong>Принуждение:</strong> Мы оставляем за собой право, но не обязанность, отслеживать, просматривать, удалять или отказывать в генерации любого контента, нарушающего настоящие Условия. Пользователи, неоднократно нарушающие настоящую Политику запрещённого контента, могут получить приостановку или удаление учётной записи без возврата средств.</p>
+      ` },
+      { h: "10. Интеллектуальная собственность", body: `
         <h3>9.1 Права на Приложение</h3>
         <p>Приложение, включая его дизайн, код, функции и брендинг, является интеллектуальной собственностью Разработчика и защищено авторским правом и другими законами об интеллектуальной собственности.</p>
         <h3>9.2 Лицензия на ИИ-контент</h3>
         <p>Истории и переводы, сгенерированные ИИ в результате использования вами Приложения, предоставляются для вашего личного, некоммерческого использования. Вы можете сохранять и делиться историями, созданными для вашей учётной записи, но не можете коммерчески распространять или публиковать их в большом масштабе.</p>
       ` },
-      { h: "10. Сторонние сервисы", body: `<p>Приложение использует сторонние сервисы для генерации ИИ-контента, аутентификации и хранения данных. Доступность и производительность этих сервисов находятся вне нашего контроля. Мы не несём ответственности за любые перерывы, ошибки или ограничения, вызванные сторонними сервисами.</p>` },
-      { h: "11. Отказ от гарантий", body: `<p><strong>Приложение предоставляется «как есть» и «как доступно», без каких-либо гарантий, явных или подразумеваемых, включая, но не ограничиваясь, подразумеваемые гарантии товарной пригодности, пригодности для конкретной цели и ненарушения прав. Мы не гарантируем, что Приложение будет работать бесперебойно, без ошибок или безопасно.</strong></p>` },
-      { h: "12. Ограничение ответственности", body: `<p><strong>В максимально допустимой законом степени Разработчик не несёт ответственности за любые косвенные, случайные, специальные, побочные или штрафные убытки, а также за потерю прибыли, данных или деловой репутации, возникшие в связи с использованием вами Приложения. Наша общая ответственность не превысит сумму, уплаченную вами за Приложение за двенадцать (12) месяцев, предшествовавших претензии.</strong></p>` },
-      { h: "13. Доступность сервиса", body: `<p>Мы оставляем за собой право изменять, приостанавливать или прекращать работу Приложения или любой его части в любое время, с уведомлением или без него. В случае прекращения работы сервиса активные подписчики получат пропорциональный возврат средств за неиспользованную часть подписки.</p>` },
-      { h: "14. Изменения настоящих Условий", body: `<p>Мы можем время от времени обновлять данные Условия. О существенных изменениях мы уведомим вас через Приложение или иными разумными способами. Продолжение использования Приложения после публикации изменений означает принятие вами обновлённых Условий.</p>` },
-      { h: "15. Лицензионное соглашение конечного пользователя", body: `<p>Использование Приложения также регулируется Стандартным лицензионным соглашением конечного пользователя Apple (EULA), доступным по адресу <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a>.</p>` }
+      { h: "11. Сторонние сервисы", body: `<p>Приложение использует сторонние сервисы для генерации ИИ-контента, аутентификации и хранения данных. Доступность и производительность этих сервисов находятся вне нашего контроля. Мы не несём ответственности за любые перерывы, ошибки или ограничения, вызванные сторонними сервисами.</p>` },
+      { h: "12. Отказ от гарантий", body: `<p><strong>Приложение предоставляется «как есть» и «как доступно», без каких-либо гарантий, явных или подразумеваемых, включая, но не ограничиваясь, подразумеваемые гарантии товарной пригодности, пригодности для конкретной цели и ненарушения прав. Мы не гарантируем, что Приложение будет работать бесперебойно, без ошибок или безопасно.</strong></p>` },
+      { h: "13. Ограничение ответственности", body: `<p><strong>В максимально допустимой законом степени Разработчик не несёт ответственности за любые косвенные, случайные, специальные, побочные или штрафные убытки, а также за потерю прибыли, данных или деловой репутации, возникшие в связи с использованием вами Приложения. Наша общая ответственность не превысит сумму, уплаченную вами за Приложение за двенадцать (12) месяцев, предшествовавших претензии.</strong></p>` },
+      { h: "14. Доступность сервиса", body: `<p>Мы оставляем за собой право изменять, приостанавливать или прекращать работу Приложения или любой его части в любое время, с уведомлением или без него. В случае прекращения работы сервиса активные подписчики получат пропорциональный возврат средств за неиспользованную часть подписки.</p>` },
+      { h: "15. Изменения настоящих Условий", body: `<p>Мы можем время от времени обновлять данные Условия. О существенных изменениях мы уведомим вас через Приложение или иными разумными способами. Продолжение использования Приложения после публикации изменений означает принятие вами обновлённых Условий.</p>` },
+      { h: "16. Лицензионное соглашение конечного пользователя", body: `<p>Использование Приложения также регулируется Стандартным лицензионным соглашением конечного пользователя Apple (EULA), доступным по адресу <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a>.</p>` }
     ],
-    contactTitle: "16. Контактная информация",
+    contactTitle: "17. Контактная информация",
     contactIntro: "Если у вас есть вопросы по настоящим Условиям, свяжитесь с нами:",
     labelEmail: "Электронная почта:",
     labelWebsite: "Веб-сайт:",
@@ -744,7 +856,7 @@ const LANGS = {
     name: "Español",
     title: "Términos del servicio",
     subtitle: "Bukwa — Historias con IA para aprender idiomas",
-    updated: "Última actualización: 10 de abril de 2026",
+    updated: "Última actualización: 2 de mayo de 2026",
     intro: `Estos Términos del servicio (los «Términos») regulan el uso que hagas de la aplicación móvil Bukwa (la «App») proporcionada por Oleksandr («Desarrollador», «nosotros», «nos» o «nuestro»). Al descargar, instalar o usar la App, aceptas quedar vinculado por estos Términos. Si no estás de acuerdo con estos Términos, no uses la App.`,
     sections: [
       { h: "1. Descripción del servicio", body: `<p>Bukwa es una aplicación de aprendizaje de idiomas que permite a los usuarios crear vocabularios, generar historias impulsadas por IA con glosarios integrados, practicar con tarjetas de memoria y traducir palabras mediante inteligencia artificial. La App admite más de 30 idiomas.</p>` },
@@ -795,23 +907,37 @@ const LANGS = {
           <li>utilizar herramientas automatizadas, bots o scripts para acceder a la App más allá del uso normal;</li>
           <li>intentar eludir los límites de uso o los requisitos de suscripción;</li>
           <li>revender, redistribuir o explotar comercialmente la App o su contenido;</li>
-          <li>usar la App para generar contenido de odio, dañino u ofensivo.</li>
         </ul>
       ` },
-      { h: "9. Propiedad intelectual", body: `
+      { h: "9. Contenido prohibido", body: `
+        <p>Aceptas no utilizar la App, incluidas sus funciones de historias y traducción por IA, para generar, solicitar, almacenar o compartir contenido que:</p>
+        <ul>
+          <li>sexualice a menores de cualquier manera o represente material de abuso sexual infantil (CSAM) — tolerancia cero para esta categoría;</li>
+          <li>contenga contenido sexual explícito, pornografía o desnudez gráfica;</li>
+          <li>promueva, glorifique o proporcione instrucciones para violencia, autolesión, suicidio o terrorismo;</li>
+          <li>promueva odio, acoso o discriminación contra cualquier persona o grupo por motivos de raza, etnia, religión, género, orientación sexual, discapacidad u otra característica protegida;</li>
+          <li>proporcione instrucciones para actividades ilegales, incluida la fabricación de armas, drogas u otras sustancias controladas;</li>
+          <li>infrinja los derechos de propiedad intelectual, privacidad o publicidad de terceros;</li>
+          <li>sea difamatorio, engañoso, fraudulento o destinado a suplantar la identidad de otra persona.</li>
+        </ul>
+        <p>La App aplica filtrado automático de contenido (a través de la API de Moderation de OpenAI) a las palabras proporcionadas por el usuario antes de generar historias, y los modelos de IA subyacentes son instruidos para redirigir el vocabulario sensible a contextos neutros y educativos. Sin embargo, ningún filtro automático es perfecto.</p>
+        <p><strong>Reporte:</strong> Si encuentras contenido que crees que viola estos Términos, repórtalo mediante la opción Report en la app o por correo electrónico a <a href="mailto:bukwa.ai@icloud.com">bukwa.ai@icloud.com</a>. Procuramos responder a los reportes en un plazo de 24 horas.</p>
+        <p><strong>Aplicación:</strong> Nos reservamos el derecho, pero no la obligación, de supervisar, revisar, eliminar o negarnos a generar cualquier contenido que viole estos Términos. Los usuarios que infrinjan repetidamente esta política de Contenido Prohibido podrán ver su cuenta suspendida o cancelada sin reembolso.</p>
+      ` },
+      { h: "10. Propiedad intelectual", body: `
         <h3>9.1 Propiedad de la App</h3>
         <p>La App, incluyendo su diseño, código, funciones e identidad de marca, es propiedad intelectual del Desarrollador y está protegida por las leyes de derechos de autor y otras leyes de propiedad intelectual.</p>
         <h3>9.2 Licencia del contenido de IA</h3>
         <p>Las historias y traducciones generadas por IA producidas mediante tu uso de la App se proporcionan para tu uso personal y no comercial. Puedes guardar y compartir las historias generadas para tu cuenta, pero no puedes distribuirlas comercialmente ni publicarlas a gran escala.</p>
       ` },
-      { h: "10. Servicios de terceros", body: `<p>La App depende de servicios de terceros para la generación de contenido con IA, la autenticación y el almacenamiento de datos. La disponibilidad y el rendimiento de estos servicios están fuera de nuestro control. No somos responsables de las interrupciones, errores o limitaciones causados por servicios de terceros.</p>` },
-      { h: "11. Exención de garantías", body: `<p><strong>La App se proporciona «tal cual» y «según disponibilidad», sin garantías de ningún tipo, expresas o implícitas, incluyendo, entre otras, las garantías implícitas de comerciabilidad, idoneidad para un fin particular y no infracción. No garantizamos que la App sea ininterrumpida, esté libre de errores o sea segura.</strong></p>` },
-      { h: "12. Limitación de responsabilidad", body: `<p><strong>En la máxima medida permitida por la ley, el Desarrollador no será responsable de ningún daño indirecto, incidental, especial, consecuente o punitivo, ni de la pérdida de beneficios, datos o fondo de comercio, derivados de o en relación con tu uso de la App. Nuestra responsabilidad total no excederá la cantidad que hayas pagado por la App en los doce (12) meses anteriores a la reclamación.</strong></p>` },
-      { h: "13. Disponibilidad del servicio", body: `<p>Nos reservamos el derecho de modificar, suspender o discontinuar la App o cualquier parte de ella en cualquier momento, con o sin previo aviso. En caso de discontinuación del servicio, los suscriptores activos recibirán un reembolso prorrateado por la parte no utilizada de su suscripción.</p>` },
-      { h: "14. Cambios a estos Términos", body: `<p>Podemos actualizar estos Términos de vez en cuando. Te notificaremos los cambios materiales a través de la App o por otros medios razonables. El uso continuado de la App después de publicarse los cambios constituye tu aceptación de los Términos revisados.</p>` },
-      { h: "15. Acuerdo de licencia de usuario final", body: `<p>El uso de la App también está sujeto al Acuerdo de licencia de usuario final estándar (EULA) de Apple, disponible en <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a>.</p>` }
+      { h: "11. Servicios de terceros", body: `<p>La App depende de servicios de terceros para la generación de contenido con IA, la autenticación y el almacenamiento de datos. La disponibilidad y el rendimiento de estos servicios están fuera de nuestro control. No somos responsables de las interrupciones, errores o limitaciones causados por servicios de terceros.</p>` },
+      { h: "12. Exención de garantías", body: `<p><strong>La App se proporciona «tal cual» y «según disponibilidad», sin garantías de ningún tipo, expresas o implícitas, incluyendo, entre otras, las garantías implícitas de comerciabilidad, idoneidad para un fin particular y no infracción. No garantizamos que la App sea ininterrumpida, esté libre de errores o sea segura.</strong></p>` },
+      { h: "13. Limitación de responsabilidad", body: `<p><strong>En la máxima medida permitida por la ley, el Desarrollador no será responsable de ningún daño indirecto, incidental, especial, consecuente o punitivo, ni de la pérdida de beneficios, datos o fondo de comercio, derivados de o en relación con tu uso de la App. Nuestra responsabilidad total no excederá la cantidad que hayas pagado por la App en los doce (12) meses anteriores a la reclamación.</strong></p>` },
+      { h: "14. Disponibilidad del servicio", body: `<p>Nos reservamos el derecho de modificar, suspender o discontinuar la App o cualquier parte de ella en cualquier momento, con o sin previo aviso. En caso de discontinuación del servicio, los suscriptores activos recibirán un reembolso prorrateado por la parte no utilizada de su suscripción.</p>` },
+      { h: "15. Cambios a estos Términos", body: `<p>Podemos actualizar estos Términos de vez en cuando. Te notificaremos los cambios materiales a través de la App o por otros medios razonables. El uso continuado de la App después de publicarse los cambios constituye tu aceptación de los Términos revisados.</p>` },
+      { h: "16. Acuerdo de licencia de usuario final", body: `<p>El uso de la App también está sujeto al Acuerdo de licencia de usuario final estándar (EULA) de Apple, disponible en <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a>.</p>` }
     ],
-    contactTitle: "16. Información de contacto",
+    contactTitle: "17. Información de contacto",
     contactIntro: "Si tienes alguna pregunta sobre estos Términos, contáctanos en:",
     labelEmail: "Correo electrónico:",
     labelWebsite: "Sitio web:",
@@ -822,7 +948,7 @@ const LANGS = {
     name: "日本語",
     title: "利用規約",
     subtitle: "Bukwa — 言語学習のためのAIストーリー",
-    updated: "最終更新日：2026年4月10日",
+    updated: "最終更新日：2026年5月2日",
     intro: `本利用規約（「本規約」）は、Oleksandr（「開発者」「当方」「私たち」または「弊社」）が提供するモバイルアプリケーション Bukwa（「本アプリ」）のご利用を規定するものです。本アプリをダウンロード、インストール、または使用することにより、お客様は本規約に拘束されることに同意したものとみなされます。本規約に同意されない場合は、本アプリを使用しないでください。`,
     sections: [
       { h: "1. サービスの説明", body: `<p>Bukwa は、ユーザーが語彙を作成し、組み込みグロッサリー付きの AI 生成ストーリーを生成し、フラッシュカードで練習し、人工知能を使用して単語を翻訳できる言語学習アプリケーションです。本アプリは 30 以上の言語をサポートしています。</p>` },
@@ -873,23 +999,37 @@ const LANGS = {
           <li>通常の使用範囲を超えて、自動化ツール、ボット、スクリプトを使用して本アプリにアクセスすること；</li>
           <li>利用制限やサブスクリプション要件を回避しようとすること；</li>
           <li>本アプリまたはそのコンテンツを再販、再配布、商業的に利用すること；</li>
-          <li>本アプリを使用して、憎悪的、有害、または攻撃的なコンテンツを生成すること。</li>
         </ul>
       ` },
-      { h: "9. 知的財産", body: `
+      { h: "9. 禁止コンテンツ", body: `
+        <p>お客様は、本アプリ（AI ストーリーおよび翻訳機能を含む）を、以下のコンテンツを生成、要求、保存、または共有するために使用しないことに同意します：</p>
+        <ul>
+          <li>未成年者を何らかの方法で性的に描写するか、児童性的虐待コンテンツ（CSAM）を描写するもの — このカテゴリーには一切の例外を認めません；</li>
+          <li>露骨な性的コンテンツ、ポルノグラフィー、または描写的な裸体を含むもの；</li>
+          <li>暴力、自傷行為、自殺、またはテロを促進、賛美、または指示するもの；</li>
+          <li>人種、民族、宗教、性別、性的指向、障害、またはその他の保護された特性に基づいて、個人またはグループに対する憎悪、嫌がらせ、または差別を促進するもの；</li>
+          <li>違法行為（武器、薬物、その他の規制物質の製造を含む）の指示を提供するもの；</li>
+          <li>第三者の知的財産権、プライバシー権、または肖像権を侵害するもの；</li>
+          <li>名誉毀損的、欺瞞的、詐欺的、または他人になりすますことを目的とするもの。</li>
+        </ul>
+        <p>本アプリは、ストーリー生成前にユーザーが提供した語彙に対して自動コンテンツフィルタリング（OpenAI の Moderation API 経由）を適用し、基盤となる AI モデルは機微な語彙を中立的で教育的な文脈に誘導するよう指示されています。ただし、いかなる自動フィルターも完璧ではありません。</p>
+        <p><strong>報告：</strong> 本規約に違反していると思われるコンテンツに遭遇した場合は、アプリ内の Report オプションまたは <a href="mailto:bukwa.ai@icloud.com">bukwa.ai@icloud.com</a> へのメールで報告してください。当社は 24 時間以内に報告に対応するよう努めます。</p>
+        <p><strong>執行：</strong> 当社は、本規約に違反するコンテンツを監視、レビュー、削除、または生成を拒否する権利を留保しますが、その義務は負いません。本禁止コンテンツポリシーに繰り返し違反するユーザーは、返金なしにアカウントの停止または終了の対象となる場合があります。</p>
+      ` },
+      { h: "10. 知的財産", body: `
         <h3>9.1 アプリの所有権</h3>
         <p>本アプリは、そのデザイン、コード、機能、ブランディングを含め、開発者の知的財産であり、著作権およびその他の知的財産法によって保護されています。</p>
         <h3>9.2 AI コンテンツライセンス</h3>
         <p>お客様の本アプリの使用を通じて生成された AI ストーリーおよび翻訳は、お客様の個人的、非商業的な使用のために提供されます。お客様のアカウント用に生成されたストーリーを保存および共有することはできますが、それらを商業的に配布したり、大規模に公開したりすることはできません。</p>
       ` },
-      { h: "10. 第三者サービス", body: `<p>本アプリは AI コンテンツ生成、認証、データストレージのために第三者サービスに依存しています。これらのサービスの可用性とパフォーマンスは当方の管理外です。当方は第三者サービスによって引き起こされる中断、エラー、または制限について責任を負いません。</p>` },
-      { h: "11. 保証の免責", body: `<p><strong>本アプリは「現状有姿」および「利用可能な状態」で提供され、明示的または黙示的を問わず、商品性、特定目的への適合性、非侵害の黙示的保証を含むがこれらに限定されない、いかなる種類の保証もありません。当方は本アプリが中断されないこと、エラーがないこと、または安全であることを保証しません。</strong></p>` },
-      { h: "12. 責任の制限", body: `<p><strong>法律で許容される最大限の範囲において、開発者は、本アプリの使用に起因または関連して生じる、間接的、付随的、特別、結果的、または懲罰的損害、利益、データ、または信用の損失について一切の責任を負いません。当方の総責任は、請求の前 12 か月間に本アプリに対してお客様が支払った金額を超えないものとします。</strong></p>` },
-      { h: "13. サービスの提供", body: `<p>当方は、通知の有無にかかわらず、いつでも本アプリまたはその一部を変更、停止、または中止する権利を留保します。サービス中止の場合、アクティブな購読者にはサブスクリプションの未使用部分に対して日割りでの払い戻しが行われます。</p>` },
-      { h: "14. 本規約の変更", body: `<p>当方は本規約を随時更新する場合があります。重要な変更については、本アプリまたはその他の合理的な手段でお知らせします。変更後も本アプリの使用を継続することは、改訂された本規約への同意を意味します。</p>` },
-      { h: "15. エンドユーザー使用許諾契約", body: `<p>本アプリの使用には、Apple の標準エンドユーザー使用許諾契約（EULA）も適用されます。<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a> でご覧いただけます。</p>` }
+      { h: "11. 第三者サービス", body: `<p>本アプリは AI コンテンツ生成、認証、データストレージのために第三者サービスに依存しています。これらのサービスの可用性とパフォーマンスは当方の管理外です。当方は第三者サービスによって引き起こされる中断、エラー、または制限について責任を負いません。</p>` },
+      { h: "12. 保証の免責", body: `<p><strong>本アプリは「現状有姿」および「利用可能な状態」で提供され、明示的または黙示的を問わず、商品性、特定目的への適合性、非侵害の黙示的保証を含むがこれらに限定されない、いかなる種類の保証もありません。当方は本アプリが中断されないこと、エラーがないこと、または安全であることを保証しません。</strong></p>` },
+      { h: "13. 責任の制限", body: `<p><strong>法律で許容される最大限の範囲において、開発者は、本アプリの使用に起因または関連して生じる、間接的、付随的、特別、結果的、または懲罰的損害、利益、データ、または信用の損失について一切の責任を負いません。当方の総責任は、請求の前 12 か月間に本アプリに対してお客様が支払った金額を超えないものとします。</strong></p>` },
+      { h: "14. サービスの提供", body: `<p>当方は、通知の有無にかかわらず、いつでも本アプリまたはその一部を変更、停止、または中止する権利を留保します。サービス中止の場合、アクティブな購読者にはサブスクリプションの未使用部分に対して日割りでの払い戻しが行われます。</p>` },
+      { h: "15. 本規約の変更", body: `<p>当方は本規約を随時更新する場合があります。重要な変更については、本アプリまたはその他の合理的な手段でお知らせします。変更後も本アプリの使用を継続することは、改訂された本規約への同意を意味します。</p>` },
+      { h: "16. エンドユーザー使用許諾契約", body: `<p>本アプリの使用には、Apple の標準エンドユーザー使用許諾契約（EULA）も適用されます。<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a> でご覧いただけます。</p>` }
     ],
-    contactTitle: "16. お問い合わせ",
+    contactTitle: "17. お問い合わせ",
     contactIntro: "本規約に関するご質問がございましたら、以下までお問い合わせください：",
     labelEmail: "メール：",
     labelWebsite: "ウェブサイト：",
@@ -900,7 +1040,7 @@ const LANGS = {
     name: "中文",
     title: "服务条款",
     subtitle: "Bukwa — 用 AI 故事学习语言",
-    updated: "最后更新：2026 年 4 月 10 日",
+    updated: "最后更新：2026 年 5 月 2 日",
     intro: `本服务条款（以下简称"条款"）规范您对 Bukwa 移动应用程序（以下简称"本应用"）的使用，本应用由 Oleksandr（以下简称"开发者"、"我们"或"本方"）提供。下载、安装或使用本应用即表示您同意受本条款约束。如果您不同意本条款，请勿使用本应用。`,
     sections: [
       { h: "1. 服务说明", body: `<p>Bukwa 是一款语言学习应用程序，允许用户创建词汇表、生成带有内置词汇表的 AI 故事、使用单词卡练习以及通过人工智能翻译单词。本应用支持 30 多种语言。</p>` },
@@ -951,23 +1091,37 @@ const LANGS = {
           <li>使用自动化工具、机器人或脚本以超出正常使用范围的方式访问本应用；</li>
           <li>试图绕过使用限制或订阅要求；</li>
           <li>转售、再分发或商业利用本应用或其内容；</li>
-          <li>使用本应用生成仇恨性、有害或冒犯性的内容。</li>
         </ul>
       ` },
-      { h: "9. 知识产权", body: `
+      { h: "9. 禁止内容", body: `
+        <p>您同意不使用本应用（包括其 AI 故事和翻译功能）生成、请求、储存或分享以下内容：</p>
+        <ul>
+          <li>以任何方式性化未成年人，或描绘儿童性虐待材料（CSAM）— 本类别零容忍；</li>
+          <li>包含露骨的性内容、色情或图形裸露；</li>
+          <li>宣传、美化或提供有关暴力、自我伤害、自杀或恐怖主义的指示；</li>
+          <li>基于种族、民族、宗教、性别、性取向、残疾或其他受保护特征，宣传对任何个人或群体的仇恨、骚扰或歧视；</li>
+          <li>提供非法活动的指示，包括制造武器、毒品或其他管制物质；</li>
+          <li>侵犯任何第三方的知识产权、隐私权或形象权；</li>
+          <li>具诽谤性、欺骗性、诈骗性或意图冒充他人。</li>
+        </ul>
+        <p>本应用在生成故事前对用户提供的词汇套用自动内容过滤（通过 OpenAI 的 Moderation API），并指示底层 AI 模型将敏感词汇重新导向至中立、教育的语境。然而，没有任何自动过滤器是完美的。</p>
+        <p><strong>举报：</strong> 如果您遇到您认为违反本条款的内容，请通过应用内的 Report 选项或发送电子邮件至 <a href="mailto:bukwa.ai@icloud.com">bukwa.ai@icloud.com</a> 进行举报。我们会在 24 小时内回应举报。</p>
+        <p><strong>执行：</strong> 我们保留监控、审查、移除或拒绝生成任何违反本条款内容的权利，但无此义务。多次违反此禁止内容政策的用户，其帐户可能会在未退款的情况下被暂停或终止。</p>
+      ` },
+      { h: "10. 知识产权", body: `
         <h3>9.1 应用所有权</h3>
         <p>本应用，包括其设计、代码、功能和品牌，是开发者的知识产权，受版权和其他知识产权法保护。</p>
         <h3>9.2 AI 内容许可</h3>
         <p>通过您使用本应用产生的 AI 生成故事和翻译仅供您个人非商业使用。您可以保存和分享为您的账户生成的故事，但不得大规模商业分发或发布。</p>
       ` },
-      { h: "10. 第三方服务", body: `<p>本应用依赖第三方服务进行 AI 内容生成、身份验证和数据存储。这些服务的可用性和性能不在我们的控制范围内。我们对第三方服务造成的任何中断、错误或限制不承担责任。</p>` },
-      { h: "11. 免责声明", body: `<p><strong>本应用按"原样"和"可用"基础提供，不提供任何明示或暗示的保证，包括但不限于适销性、特定用途适用性和非侵权的暗示保证。我们不保证本应用将不间断、无错误或安全。</strong></p>` },
-      { h: "12. 责任限制", body: `<p><strong>在法律允许的最大范围内，开发者不对因您使用本应用而产生的或与之相关的任何间接、附带、特殊、后果性或惩罚性损害，或任何利润、数据或商誉的损失承担责任。我们的总责任不应超过您在索赔前十二 (12) 个月内为本应用支付的金额。</strong></p>` },
-      { h: "13. 服务可用性", body: `<p>我们保留随时修改、暂停或停止本应用或其任何部分的权利，无论是否事先通知。如果服务停止，活跃订阅者将获得其订阅未使用部分的按比例退款。</p>` },
-      { h: "14. 本条款的变更", body: `<p>我们可能会不时更新本条款。我们将通过本应用或其他合理方式通知您重大变更。在变更发布后继续使用本应用即表示您接受修订后的条款。</p>` },
-      { h: "15. 最终用户许可协议", body: `<p>本应用的使用还受 Apple 标准最终用户许可协议 (EULA) 约束，可在 <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a> 查看。</p>` }
+      { h: "11. 第三方服务", body: `<p>本应用依赖第三方服务进行 AI 内容生成、身份验证和数据存储。这些服务的可用性和性能不在我们的控制范围内。我们对第三方服务造成的任何中断、错误或限制不承担责任。</p>` },
+      { h: "12. 免责声明", body: `<p><strong>本应用按"原样"和"可用"基础提供，不提供任何明示或暗示的保证，包括但不限于适销性、特定用途适用性和非侵权的暗示保证。我们不保证本应用将不间断、无错误或安全。</strong></p>` },
+      { h: "13. 责任限制", body: `<p><strong>在法律允许的最大范围内，开发者不对因您使用本应用而产生的或与之相关的任何间接、附带、特殊、后果性或惩罚性损害，或任何利润、数据或商誉的损失承担责任。我们的总责任不应超过您在索赔前十二 (12) 个月内为本应用支付的金额。</strong></p>` },
+      { h: "14. 服务可用性", body: `<p>我们保留随时修改、暂停或停止本应用或其任何部分的权利，无论是否事先通知。如果服务停止，活跃订阅者将获得其订阅未使用部分的按比例退款。</p>` },
+      { h: "15. 本条款的变更", body: `<p>我们可能会不时更新本条款。我们将通过本应用或其他合理方式通知您重大变更。在变更发布后继续使用本应用即表示您接受修订后的条款。</p>` },
+      { h: "16. 最终用户许可协议", body: `<p>本应用的使用还受 Apple 标准最终用户许可协议 (EULA) 约束，可在 <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/.../stdeula</a> 查看。</p>` }
     ],
-    contactTitle: "16. 联系信息",
+    contactTitle: "17. 联系信息",
     contactIntro: "如果您对本条款有任何疑问，请通过以下方式与我们联系：",
     labelEmail: "电子邮件：",
     labelWebsite: "网站：",
